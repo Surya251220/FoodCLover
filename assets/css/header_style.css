@@ -1,0 +1,119 @@
+/* ------------------------------------
+   GLOBAL STYLES
+-------------------------------------- */
+
+/* Reset margins and set padding-top for fixed navbar */
+body {
+  margin: 0;
+  padding-top: 90px; /* Add padding equal to the height of the navigation bar */
+  font-family: Arial, sans-serif;
+}
+
+/* ------------------------------------
+   NAVIGATION BAR
+-------------------------------------- */
+
+/* Set background color and flex display for navbar */
+nav {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Set list style to none and remove margins and padding */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Set margins for navbar list items */
+nav ul li {
+  margin: 0 10px;
+}
+
+/* Set styles for navbar links */
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.5s ease;
+}
+
+/* Set background color when navbar links are hovered */
+nav ul li a:hover {
+  background-color: #444;
+}
+
+/* Set styles for active navbar link */
+.active {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* ------------------------------------
+   NAVBAR LEFT SECTION
+-------------------------------------- */
+
+/* Set flex display and width for left section */
+.left-links {
+  display: flex;
+  width: calc(50% - 220px);
+}
+
+/* ------------------------------------
+   NAVBAR RIGHT SECTION
+-------------------------------------- */
+
+/* Set flex display, width and margins for right section */
+.right-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(50% - 220px);
+  margin-right: 100px;
+}
+
+/* ------------------------------------
+   NAVBAR CENTER
+-------------------------------------- */
+
+/* Set flex display and center align logo */
+.center-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Set height for logo */
+.center-logo img {
+  height: 90px;
+}
+
+/* ------------------------------------
+   LOGIN BUTTON
+-------------------------------------- */
+
+/* Set styles for login button */
+.login {
+  background-color: white;
+  color: #222;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Set background color when login button is hovered */
+.login:hover {
+  background-color: #e6b800;
+}
